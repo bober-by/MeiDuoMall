@@ -474,3 +474,24 @@ WARNING 2018-08-18 19:32:11,582 basehttp 124 "GET /mobiles/13155009857/count/ HT
 WARNING 2018-08-18 19:32:11,616 base 152 Not Found: /mobiles/13155009857/count/
 WARNING 2018-08-18 19:32:11,616 basehttp 124 "GET /mobiles/13155009857/count/ HTTP/1.1" 404 2202
 INFO 2018-08-18 19:32:11,647 basehttp 124 "GET /sms_code/13155009857/ HTTP/1.1" 200 16
+WARNING 2018-08-19 15:34:10,393 base 152 Not Found: /mobiles/13112345678/count/
+WARNING 2018-08-19 15:34:10,387 base 152 Not Found: /mobiles/13112345678/count/
+WARNING 2018-08-19 15:34:10,432 basehttp 124 "GET /mobiles/13112345678/count/ HTTP/1.1" 404 2202
+WARNING 2018-08-19 15:34:10,437 basehttp 124 "GET /mobiles/13112345678/count/ HTTP/1.1" 404 2202
+INFO 2018-08-19 15:34:10,604 basehttp 124 "GET /sms_code/13112345678/ HTTP/1.1" 200 16
+WARNING 2018-08-19 15:44:27,143 base 152 Not Found: /usernames/bobers/count/
+WARNING 2018-08-19 15:44:27,146 basehttp 124 "GET /usernames/bobers/count/ HTTP/1.1" 404 2193
+WARNING 2018-08-19 15:46:09,294 base 152 Not Found: /usernames/bobers/count/
+WARNING 2018-08-19 15:46:09,302 basehttp 124 "GET /usernames/bobers/count/ HTTP/1.1" 404 2193
+WARNING 2018-08-19 15:47:36,081 base 152 Not Found: /usernames/bobers/count/
+WARNING 2018-08-19 15:47:36,082 basehttp 124 "GET /usernames/bobers/count/ HTTP/1.1" 404 2193
+WARNING 2018-08-19 15:48:18,196 base 152 Not Found: /usernames/bobers/count/
+WARNING 2018-08-19 15:48:18,196 basehttp 124 "GET /usernames/bobers/count/ HTTP/1.1" 404 2193
+INFO 2018-08-19 21:10:38,693 basehttp 124 "GET /usernames/smith/count/ HTTP/1.1" 200 30
+INFO 2018-08-19 21:11:01,253 basehttp 124 "GET /mobiles/13012345678/count/ HTTP/1.1" 200 34
+INFO 2018-08-19 21:11:01,323 basehttp 124 "GET /mobiles/13012345678/count/ HTTP/1.1" 200 34
+INFO 2018-08-19 21:11:01,379 basehttp 124 "GET /sms_code/13012345678/ HTTP/1.1" 200 16
+INFO 2018-08-19 21:11:11,397 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2018-08-19 21:11:11,405 basehttp 124 "GET /usernames/smith/count/ HTTP/1.1" 200 30
+INFO 2018-08-19 21:11:11,423 basehttp 124 "GET /mobiles/13012345678/count/ HTTP/1.1" 200 34
+INFO 2018-08-19 21:11:11,510 basehttp 124 "POST /users/ HTTP/1.1" 201 50

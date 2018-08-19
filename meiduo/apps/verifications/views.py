@@ -2,7 +2,9 @@ from django_redis import get_redis_connection
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework import serializers
-from utils.ytx_sdk.sendSMS import CCP
+from celery_tasks.sms.tasks import sms_send
+
+
 import random
 
 # 验证码
@@ -35,6 +37,7 @@ class SMSCodeView(APIView):
 
         # 使用云通讯发送验证码,单位为分钟
         # CCP.sendTemplateSMS(mobile,sms_code,5,1)
+        sms_send.delay(mobile,sms_code,5,1)
 
         print(sms_code)
 
