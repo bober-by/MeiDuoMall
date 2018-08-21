@@ -1,4 +1,5 @@
 from rest_framework import serializers
+from rest_framework_jwt.settings import api_settings
 from .models import User
 from django_redis import get_redis_connection
 import re
@@ -37,7 +38,14 @@ class UserCreateSerializer(serializers.Serializer):
     # massage vaildate
     sms_code = serializers.CharField(write_only=True)
 
+    # statue of login
+    token = serializers.CharField(label='登录状态token',read_only=True)
+
     def validate_username(self, value):
+        # username must contain English character
+        if not re.search(r'[a-zA-Z]',value):
+            raise serializers.ValidationError('用户名必须包含英文字母')
+
         # verify whether the username is registered by others
         count = User.objects.filter(username=value).count()
         if count>0:
@@ -95,5 +103,15 @@ class UserCreateSerializer(serializers.Serializer):
         user.mobile = validated_data.get('mobile')
         user.set_password(validated_data.get('password'))
         user.save()
+
+        # 生成记录登录状态的token
+        jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+        jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
+
+        payload = jwt_payload_handler(user)
+        token = jwt_encode_handler(payload)
+
+        user.token = token
+
 
         return user

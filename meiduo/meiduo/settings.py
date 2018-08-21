@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 
 import os
 import sys
+import datetime
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -205,8 +206,20 @@ LOGGING = {
 }
 
 REST_FRAMEWORK = {
-    # 异常处理
+    # exception handle
     'EXCEPTION_HANDLER': 'utils.exceptions.exception_handler',
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+    ),
+}
+
+JWT_AUTH = {
+    # set token's expiration time
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),
+    # set the handle function to be self-defining function
+    'JWT_RESPONSE_PAYLOAD_HANDLER': 'users.utils.jwt_response_payload_handler',
 }
 
 # CORS
@@ -220,3 +233,7 @@ CORS_ALLOW_CREDENTIALS = True  # 允许携带cookie
 
 #当前存在两个User类，自定义1个，django贡献1个，需要指定通过哪个模型类进行身份认证
 AUTH_USER_MODEL = 'users.User'
+
+AUTHENTICATION_BACKENDS = [
+    'users.utils.UsernameMobileModelBackend'
+]

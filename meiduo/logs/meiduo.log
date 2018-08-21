@@ -495,3 +495,64 @@ INFO 2018-08-19 21:11:11,397 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
 INFO 2018-08-19 21:11:11,405 basehttp 124 "GET /usernames/smith/count/ HTTP/1.1" 200 30
 INFO 2018-08-19 21:11:11,423 basehttp 124 "GET /mobiles/13012345678/count/ HTTP/1.1" 200 34
 INFO 2018-08-19 21:11:11,510 basehttp 124 "POST /users/ HTTP/1.1" 201 50
+WARNING 2018-08-21 14:58:53,485 base 152 Not Found: /
+WARNING 2018-08-21 14:58:53,494 basehttp 124 "GET / HTTP/1.1" 404 2651
+WARNING 2018-08-21 14:58:53,623 base 152 Not Found: /favicon.ico
+WARNING 2018-08-21 14:58:53,629 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2702
+WARNING 2018-08-21 15:15:32,277 base 152 Not Found: /
+WARNING 2018-08-21 15:15:32,279 basehttp 124 "GET / HTTP/1.1" 404 2816
+WARNING 2018-08-21 15:15:43,183 base 152 Not Found: /authonrizations
+WARNING 2018-08-21 15:15:43,196 basehttp 124 "GET /authonrizations HTTP/1.1" 404 2879
+WARNING 2018-08-21 15:15:50,073 base 152 Not Found: /authonrizations/
+WARNING 2018-08-21 15:15:50,089 basehttp 124 "GET /authonrizations/ HTTP/1.1" 404 2882
+WARNING 2018-08-21 15:16:07,092 basehttp 124 "GET /authorizations/ HTTP/1.1" 405 7589
+INFO 2018-08-21 15:16:07,177 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2018-08-21 15:16:07,191 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2018-08-21 15:16:07,207 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121200
+INFO 2018-08-21 15:16:07,217 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+INFO 2018-08-21 15:16:07,234 basehttp 124 "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+INFO 2018-08-21 15:16:07,237 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2018-08-21 15:16:07,246 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1735
+INFO 2018-08-21 15:16:07,263 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37045
+INFO 2018-08-21 15:16:07,267 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2018-08-21 15:16:07,268 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1262
+INFO 2018-08-21 15:16:07,343 basehttp 124 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING 2018-08-21 15:16:36,684 basehttp 124 "POST /authorizations/ HTTP/1.1" 400 7640
+WARNING 2018-08-21 15:17:24,519 basehttp 124 "POST /authorizations/ HTTP/1.1" 400 7640
+WARNING 2018-08-21 15:17:35,671 basehttp 124 "POST /authorizations/ HTTP/1.1" 400 7639
+WARNING 2018-08-21 15:17:41,862 basehttp 124 "POST /authorizations/ HTTP/1.1" 400 7638
+ERROR 2018-08-21 15:18:12,066 exception 135 Internal Server Error: /authorizations/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework_jwt/views.py", line 60, in post
+    response_data = jwt_response_payload_handler(token, user, request)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/apps/users/utils.py", line 14, in jwt_response_payload_handler
+    'username':user.name
+AttributeError: 'User' object has no attribute 'name'
+ERROR 2018-08-21 15:18:12,215 basehttp 124 "POST /authorizations/ HTTP/1.1" 500 101027
+WARNING 2018-08-21 15:18:59,638 basehttp 124 "GET /authorizations/ HTTP/1.1" 405 7589
+INFO 2018-08-21 15:19:08,936 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 7775
+INFO 2018-08-21 15:38:55,646 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 7775
+INFO 2018-08-21 15:39:09,796 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 7775
+INFO 2018-08-21 17:46:07,966 basehttp 124 "GET /users HTTP/1.1" 301 0
+WARNING 2018-08-21 17:46:08,086 basehttp 124 "GET /users/ HTTP/1.1" 405 8415
+WARNING 2018-08-21 17:47:12,069 base 152 Not Found: /sms_code
+WARNING 2018-08-21 17:47:12,073 basehttp 124 "GET /sms_code HTTP/1.1" 404 2858
+INFO 2018-08-21 17:47:47,302 basehttp 124 "GET /sms_code/13198765432 HTTP/1.1" 301 0
+INFO 2018-08-21 17:47:47,544 basehttp 124 "GET /sms_code/13198765432/ HTTP/1.1" 200 5170
+WARNING 2018-08-21 17:48:03,735 basehttp 124 "POST /users/ HTTP/1.1" 400 8579
