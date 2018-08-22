@@ -556,3 +556,20 @@ WARNING 2018-08-21 17:47:12,073 basehttp 124 "GET /sms_code HTTP/1.1" 404 2858
 INFO 2018-08-21 17:47:47,302 basehttp 124 "GET /sms_code/13198765432 HTTP/1.1" 301 0
 INFO 2018-08-21 17:47:47,544 basehttp 124 "GET /sms_code/13198765432/ HTTP/1.1" 200 5170
 WARNING 2018-08-21 17:48:03,735 basehttp 124 "POST /users/ HTTP/1.1" 400 8579
+INFO 2018-08-22 16:59:26,320 basehttp 124 "GET /sms_code/13198765432 HTTP/1.1" 301 0
+INFO 2018-08-22 16:59:26,772 basehttp 124 "GET /sms_code/13198765432/ HTTP/1.1" 200 5170
+INFO 2018-08-22 16:59:26,796 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2018-08-22 16:59:26,797 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2018-08-22 16:59:26,798 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2018-08-22 16:59:26,799 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2018-08-22 16:59:26,824 basehttp 124 "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 304 0
+INFO 2018-08-22 16:59:26,846 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2018-08-22 16:59:26,849 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2018-08-22 16:59:26,860 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2018-08-22 16:59:26,871 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2018-08-22 16:59:26,880 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2018-08-22 16:59:27,220 basehttp 124 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+WARNING 2018-08-22 16:59:27,600 base 152 Not Found: /favicon.ico
+WARNING 2018-08-22 16:59:27,607 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2974
+WARNING 2018-08-22 16:59:30,655 base 152 Not Found: /
+WARNING 2018-08-22 16:59:30,664 basehttp 124 "GET / HTTP/1.1" 404 2923
