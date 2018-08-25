@@ -573,3 +573,260 @@ WARNING 2018-08-22 16:59:27,600 base 152 Not Found: /favicon.ico
 WARNING 2018-08-22 16:59:27,607 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2974
 WARNING 2018-08-22 16:59:30,655 base 152 Not Found: /
 WARNING 2018-08-22 16:59:30,664 basehttp 124 "GET / HTTP/1.1" 404 2923
+INFO 2018-08-23 01:46:54,765 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2018-08-23 01:47:33,637 basehttp 124 "GET /oauth/qq/user/?code=91DC6F1D0D3D4AEF3BC7AE014F11A801 HTTP/1.1" 200 190
+INFO 2018-08-23 01:47:53,798 basehttp 124 "GET /sms_code/13112345678/ HTTP/1.1" 200 16
+INFO 2018-08-23 01:48:02,214 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+WARNING 2018-08-23 01:48:02,221 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 405 46
+WARNING 2018-08-23 01:48:05,224 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 405 46
+INFO 2018-08-23 01:48:17,980 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+WARNING 2018-08-23 01:48:17,989 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 405 46
+INFO 2018-08-23 01:50:01,435 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+WARNING 2018-08-23 01:50:01,445 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 405 46
+INFO 2018-08-23 01:51:06,014 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2018-08-23 01:51:06,025 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/apps/oauth/views.py", line 76, in post
+    serializer = self.get_serializer(data=request.data)
+AttributeError: 'QQAuthUserView' object has no attribute 'get_serializer'
+ERROR 2018-08-23 01:51:06,218 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 18101
+INFO 2018-08-23 01:53:42,539 basehttp 124 "GET /sms_code/13112345678/ HTTP/1.1" 200 16
+INFO 2018-08-23 01:53:54,217 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2018-08-23 01:53:54,228 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/apps/oauth/views.py", line 76, in post
+    serializer = self.OAuthQQUserSerializer(data=request.data)
+AttributeError: 'QQAuthUserView' object has no attribute 'OAuthQQUserSerializer'
+ERROR 2018-08-23 01:53:54,315 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 18122
+INFO 2018-08-23 01:54:29,427 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+WARNING 2018-08-23 01:54:29,443 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 46
+INFO 2018-08-24 14:32:21,051 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2018-08-24 14:32:37,373 basehttp 124 "GET /oauth/qq/user/?code=F262043493A06A9B7F5BF53E5D90AC81 HTTP/1.1" 200 190
+INFO 2018-08-24 14:32:48,179 basehttp 124 "GET /sms_code/13112345678/ HTTP/1.1" 200 16
+INFO 2018-08-24 14:32:55,474 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+INFO 2018-08-24 14:32:55,556 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 200 204
+INFO 2018-08-24 14:38:08,688 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+WARNING 2018-08-24 14:38:08,780 base 152 Not Found: /user/
+WARNING 2018-08-24 14:38:08,781 basehttp 124 "GET /user/ HTTP/1.1" 404 2956
+INFO 2018-08-24 15:02:37,578 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+WARNING 2018-08-24 15:02:37,597 base 152 Not Found: /user/
+WARNING 2018-08-24 15:02:37,605 basehttp 124 "GET /user/ HTTP/1.1" 404 2956
+WARNING 2018-08-24 15:02:40,008 base 152 Not Found: /user/
+WARNING 2018-08-24 15:02:40,011 basehttp 124 "GET /user/ HTTP/1.1" 404 2956
+ERROR 2018-08-24 15:03:22,902 exception 135 Internal Server Error: /user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/generics.py", line 210, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/mixins.py", line 58, in retrieve
+    return Response(serializer.data)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/serializers.py", line 560, in data
+    ret = super(Serializer, self).data
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/serializers.py", line 510, in to_representation
+    fields = self._readable_fields
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/serializers.py", line 376, in _readable_fields
+    field for field in self.fields.values()
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/serializers.py", line 1020, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/serializers.py", line 1097, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: ("Creating a ModelSerializer without either the 'fields' attribute or the 'exclude' attribute has been deprecated since 3.3.0, and is now disallowed. Add an explicit fields = '__all__' to the UserDetailSerializer serializer.",)
+ERROR 2018-08-24 15:03:23,106 basehttp 124 "GET /user/ HTTP/1.1" 500 20121
+INFO 2018-08-24 15:04:19,718 basehttp 124 "GET /user/ HTTP/1.1" 200 82
+INFO 2018-08-24 15:04:19,779 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-08-24 15:04:19,795 base 152 Not Found: /browse_histories/
+WARNING 2018-08-24 15:04:19,798 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3147
+INFO 2018-08-24 15:58:42,815 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2018-08-24 15:58:42,956 basehttp 124 "PUT /emails/ HTTP/1.1" 200 35
+INFO 2018-08-24 16:31:54,523 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-08-24 16:31:54,586 basehttp 124 "GET /user/ HTTP/1.1" 200 82
+INFO 2018-08-24 16:31:54,616 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-08-24 16:31:54,633 base 152 Not Found: /browse_histories/
+WARNING 2018-08-24 16:31:54,634 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 4645
+INFO 2018-08-24 16:32:27,029 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2018-08-24 16:32:27,166 basehttp 124 "PUT /emails/ HTTP/1.1" 200 35
+INFO 2018-08-24 16:35:26,572 basehttp 124 "GET /user/ HTTP/1.1" 200 82
+WARNING 2018-08-24 16:35:26,676 base 152 Not Found: /browse_histories/
+WARNING 2018-08-24 16:35:26,681 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 4645
+INFO 2018-08-24 16:35:37,600 basehttp 124 "PUT /emails/ HTTP/1.1" 200 35
+INFO 2018-08-24 16:38:11,305 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+WARNING 2018-08-24 16:38:11,371 base 152 Not Found: /browse_histories/
+WARNING 2018-08-24 16:38:11,399 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 4645
+INFO 2018-08-24 16:38:35,535 basehttp 124 "GET /user/ HTTP/1.1" 200 82
+WARNING 2018-08-24 16:38:35,647 base 152 Not Found: /browse_histories/
+WARNING 2018-08-24 16:38:35,648 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 4645
+INFO 2018-08-24 16:38:46,877 basehttp 124 "PUT /emails/ HTTP/1.1" 200 35
+INFO 2018-08-24 16:39:54,238 basehttp 124 "GET /user/ HTTP/1.1" 200 82
+WARNING 2018-08-24 16:39:54,366 base 152 Not Found: /browse_histories/
+WARNING 2018-08-24 16:39:54,367 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 4645
+INFO 2018-08-24 16:40:04,788 basehttp 124 "PUT /emails/ HTTP/1.1" 200 35
+INFO 2018-08-24 16:42:23,654 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-08-24 16:42:23,759 basehttp 124 "GET /user/ HTTP/1.1" 200 82
+INFO 2018-08-24 16:42:23,767 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-08-24 16:42:23,807 base 152 Not Found: /browse_histories/
+WARNING 2018-08-24 16:42:23,814 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 4645
+INFO 2018-08-24 16:42:33,703 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2018-08-24 16:42:33,819 basehttp 124 "PUT /emails/ HTTP/1.1" 200 35
+INFO 2018-08-24 16:49:42,670 basehttp 124 "GET /user/ HTTP/1.1" 200 82
+WARNING 2018-08-24 16:49:42,759 base 152 Not Found: /browse_histories/
+WARNING 2018-08-24 16:49:42,763 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 4645
+INFO 2018-08-24 16:49:56,462 basehttp 124 "PUT /emails/ HTTP/1.1" 200 35
+INFO 2018-08-24 16:52:19,933 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUzNTEwMDU5NiwiZXhwIjoxNTM1MTg2OTk2fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Ijc3Mzc1NjQ5MUBxcS5jb20ifQ.4NGdnnMsaSPxKWF0B2xPWBHIm41hDJs2uU1FjJodS88 HTTP/1.1" 200 16
+INFO 2018-08-24 16:53:07,787 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-08-24 16:53:07,929 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+INFO 2018-08-24 16:53:07,960 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-08-24 16:53:07,972 base 152 Not Found: /browse_histories/
+WARNING 2018-08-24 16:53:07,975 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 4645
+INFO 2018-08-24 16:53:10,236 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+INFO 2018-08-24 16:53:10,263 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+WARNING 2018-08-24 16:53:10,320 base 152 Not Found: /addresses/
+WARNING 2018-08-24 16:53:10,320 basehttp 124 "GET /addresses/ HTTP/1.1" 404 4624
+INFO 2018-08-24 16:53:15,919 basehttp 124 "GET /areas/120000/ HTTP/1.1" 200 74
+INFO 2018-08-24 16:53:17,264 basehttp 124 "GET /areas/120100/ HTTP/1.1" 200 572
+INFO 2018-08-24 16:53:29,504 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+WARNING 2018-08-24 16:53:29,575 base 152 Not Found: /browse_histories/
+WARNING 2018-08-24 16:53:29,577 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 4645
+INFO 2018-08-24 17:01:16,609 basehttp 124 "GET /sms_code/13198765432/ HTTP/1.1" 200 5263
+INFO 2018-08-24 17:01:16,652 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2018-08-24 17:01:16,653 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2018-08-24 17:01:16,653 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2018-08-24 17:01:16,676 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2018-08-24 17:01:16,679 basehttp 124 "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 304 0
+INFO 2018-08-24 17:01:16,683 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2018-08-24 17:01:16,685 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2018-08-24 17:01:16,687 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2018-08-24 17:01:16,689 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2018-08-24 17:01:16,713 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2018-08-24 17:01:16,788 basehttp 124 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+WARNING 2018-08-24 17:01:17,087 base 152 Not Found: /favicon.ico
+WARNING 2018-08-24 17:01:17,093 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 4627
+INFO 2018-08-24 17:01:20,317 basehttp 124 "GET / HTTP/1.1" 200 5183
+WARNING 2018-08-24 19:07:48,805 base 152 Not Found: /books
+WARNING 2018-08-24 19:07:48,819 basehttp 124 "GET /books HTTP/1.1" 404 4603
+WARNING 2018-08-24 19:07:48,913 base 152 Not Found: /favicon.ico
+WARNING 2018-08-24 19:07:48,914 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 4621
+INFO 2018-08-24 19:07:58,789 basehttp 124 "GET /admin HTTP/1.1" 301 0
+INFO 2018-08-24 19:07:58,912 basehttp 124 "GET /admin/ HTTP/1.1" 302 0
+INFO 2018-08-24 19:07:59,197 basehttp 124 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1652
+INFO 2018-08-24 19:07:59,231 basehttp 124 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2018-08-24 19:07:59,231 basehttp 124 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2018-08-24 19:07:59,244 basehttp 124 "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO 2018-08-24 19:07:59,262 basehttp 124 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+INFO 2018-08-24 19:07:59,267 basehttp 124 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO 2018-08-24 19:08:16,104 basehttp 124 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1784
+INFO 2018-08-24 19:08:16,141 basehttp 124 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO 2018-08-24 19:08:22,739 basehttp 124 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1784
+INFO 2018-08-24 19:08:28,346 basehttp 124 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1784
+INFO 2018-08-24 19:08:32,113 basehttp 124 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1784
+INFO 2018-08-24 19:08:40,332 basehttp 124 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1784
+INFO 2018-08-24 19:09:08,676 basehttp 124 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1784
+INFO 2018-08-24 21:54:27,687 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+INFO 2018-08-24 21:54:27,764 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+WARNING 2018-08-24 21:54:27,822 base 152 Not Found: /addresses/
+WARNING 2018-08-24 21:54:27,825 basehttp 124 "GET /addresses/ HTTP/1.1" 404 4624
+INFO 2018-08-24 21:54:31,024 basehttp 124 "GET /areas/130000/ HTTP/1.1" 200 464
+INFO 2018-08-24 21:54:32,803 basehttp 124 "GET /areas/130200/ HTTP/1.1" 200 503
+INFO 2018-08-25 12:53:22,192 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+INFO 2018-08-25 12:53:22,287 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2018-08-25 12:53:22,390 basehttp 124 "GET /addresses/ HTTP/1.1" 200 64
+INFO 2018-08-25 12:53:29,445 basehttp 124 "GET /areas/110000/ HTTP/1.1" 200 74
+INFO 2018-08-25 12:53:30,965 basehttp 124 "GET /areas/110100/ HTTP/1.1" 200 575
+INFO 2018-08-25 12:54:04,753 basehttp 124 "POST /addresses/ HTTP/1.1" 201 251
+INFO 2018-08-25 12:54:09,001 basehttp 124 "OPTIONS /addresses/1/status/ HTTP/1.1" 200 0
+INFO 2018-08-25 12:54:09,030 basehttp 124 "PUT /addresses/1/status/ HTTP/1.1" 200 16
+INFO 2018-08-25 13:17:40,062 basehttp 124 "OPTIONS /addresses/1/title/ HTTP/1.1" 200 0
+ERROR 2018-08-25 13:17:40,163 exception 135 Internal Server Error: /addresses/1/title/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/apps/users/views.py", line 149, in title
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/serializers.py", line 434, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/serializers.py", line 482, in to_internal_value
+    fields = self._writable_fields
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/serializers.py", line 370, in _writable_fields
+    field for field in self.fields.values() if not field.read_only
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/serializers.py", line 1020, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/serializers.py", line 1076, in get_field_names
+    'Got %s.' % type(fields).__name__
+TypeError: The `fields` option must be a list or tuple or "__all__". Got str.
+ERROR 2018-08-25 13:17:40,233 basehttp 124 "PUT /addresses/1/title/ HTTP/1.1" 500 19894
+INFO 2018-08-25 13:19:05,424 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+INFO 2018-08-25 13:19:05,462 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2018-08-25 13:19:05,564 basehttp 124 "GET /addresses/ HTTP/1.1" 200 312
+INFO 2018-08-25 13:19:12,208 basehttp 124 "PUT /addresses/1/title/ HTTP/1.1" 200 18

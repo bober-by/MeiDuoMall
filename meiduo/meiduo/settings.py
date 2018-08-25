@@ -50,6 +50,9 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'verifications.apps.VerificationsConfig',
     'oauth.apps.OauthConfig',
+    'areas.apps.AreasConfig',
+    'goods.apps.GoodsConfig',
+    'contents.apps.ContentsConfig',
 ]
 
 MIDDLEWARE = [
@@ -156,7 +159,7 @@ CACHES = {
     },
     "verify_code": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://127.0.0.1:6379/2",
+        "LOCATION": "redis://127.0.0.1:6379/3",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
@@ -244,3 +247,29 @@ QQ_CLIENT_ID = '101474184'
 QQ_CLIENT_SECRET = 'c6ce949e04e12ecc909ae6a8b09b637c'
 QQ_REDIRECT_URI = 'http://www.meiduo.site:8080/oauth_callback.html'
 QQ_STATE = '/'
+
+# Email parameters
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.126.com'
+EMAIL_PORT = 25
+# email adderss of sender
+EMAIL_HOST_USER = 'by_bober@126.com'
+# 在邮箱中设置的客户端授权密码
+EMAIL_HOST_PASSWORD = 'bober123456'
+# 收件人看到的发件人
+EMAIL_FROM = '美多商城<by_bober@126.com>'
+
+# DRF扩展
+REST_FRAMEWORK_EXTENSIONS = {
+    # 缓存时间
+    'DEFAULT_CACHE_RESPONSE_TIMEOUT': 60 * 60,
+    # 缓存存储
+    'DEFAULT_USE_CACHE': 'default',
+}
+
+# django文件存储
+DEFAULT_FILE_STORAGE = 'meiduo_mall.utils.fastdfs.fdfs_storage.FastDFSStorage'
+
+# FastDFS
+FDFS_URL = 'http://image.meiduo.site:8888/'
+FDFS_CLIENT_CONF = os.path.join(BASE_DIR, 'utils/fastdfs/client.conf')

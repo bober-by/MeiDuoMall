@@ -14,5 +14,6 @@ app.config_from_object(config)
 # 在指定的包中找tasks.py文件，在这个文件中找@app.task函数
 app.autodiscover_tasks([
     'celery_tasks.sms',
+    'celery_tasks.email',
 
 ])

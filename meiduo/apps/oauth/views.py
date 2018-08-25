@@ -71,3 +71,15 @@ class QQAuthUserView(APIView):
                 'username': user.username
             })
             return response
+
+    def post(self, request):
+        serializer = OAuthQQUserSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        user = serializer.save()
+
+        response = Response({
+            'token': user.token,
+            'user_id': user.id,
+            'username': user.username
+        })
+        return response
