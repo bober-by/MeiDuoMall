@@ -12,6 +12,8 @@ urlpatterns = [
     url(r'^user/$',views.UserDetailView.as_view()),
     url(r'^emails/$', views.EmailView.as_view()),  # email setting
     url(r'^emails/verification/$', views.VerifyEmailView.as_view()),
+    url('^user/browse_histories/$', views.UserBrowsingHistoryView.as_view()),
+    url('^browse_histories/$', views.UserBrowsingHistoryView.as_view()),
 
 ]
 

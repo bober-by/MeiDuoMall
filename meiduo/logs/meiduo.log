@@ -830,3 +830,837 @@ INFO 2018-08-25 13:19:05,424 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
 INFO 2018-08-25 13:19:05,462 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
 INFO 2018-08-25 13:19:05,564 basehttp 124 "GET /addresses/ HTTP/1.1" 200 312
 INFO 2018-08-25 13:19:12,208 basehttp 124 "PUT /addresses/1/title/ HTTP/1.1" 200 18
+INFO 2018-08-27 14:53:37,428 basehttp 124 "GET /admin/ HTTP/1.1" 302 0
+INFO 2018-08-27 14:53:37,713 basehttp 124 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1652
+INFO 2018-08-27 14:53:37,822 basehttp 124 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2018-08-27 14:53:37,840 basehttp 124 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2018-08-27 14:53:37,978 basehttp 124 "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO 2018-08-27 14:53:38,116 basehttp 124 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO 2018-08-27 14:53:38,151 basehttp 124 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+WARNING 2018-08-27 14:53:38,378 base 152 Not Found: /favicon.ico
+WARNING 2018-08-27 14:53:38,382 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 6842
+INFO 2018-08-27 14:53:48,262 basehttp 124 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2018-08-27 14:53:48,370 basehttp 124 "GET /admin/ HTTP/1.1" 200 3478
+INFO 2018-08-27 14:53:48,414 basehttp 124 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2018-08-27 14:53:48,483 basehttp 124 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO 2018-08-27 14:53:48,515 basehttp 124 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2018-08-27 14:53:48,516 basehttp 124 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2018-08-27 14:53:55,010 basehttp 124 "GET /admin/contents/contentcategory/ HTTP/1.1" 200 3132
+INFO 2018-08-27 14:53:55,056 basehttp 124 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2018-08-27 14:53:55,077 basehttp 124 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2018-08-27 14:53:55,110 basehttp 124 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2018-08-27 14:53:55,116 basehttp 124 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2018-08-27 14:53:55,152 basehttp 124 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2018-08-27 14:53:55,155 basehttp 124 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2018-08-27 14:53:55,155 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-08-27 14:53:55,156 basehttp 124 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2018-08-27 14:53:55,189 basehttp 124 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2018-08-27 14:53:55,204 basehttp 124 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2018-08-27 14:53:55,611 basehttp 124 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2018-08-27 14:53:59,600 basehttp 124 "GET /admin/ HTTP/1.1" 200 3478
+INFO 2018-08-27 16:01:16,161 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2018-08-27 16:01:16,190 base 152 Not Found: /categories/115/
+WARNING 2018-08-27 16:01:16,201 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 6860
+WARNING 2018-08-27 16:01:16,195 base 152 Not Found: /categories/115/skus/
+WARNING 2018-08-27 16:01:16,205 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 404 6924
+WARNING 2018-08-27 16:01:16,220 base 152 Not Found: /cart/
+WARNING 2018-08-27 16:01:16,228 basehttp 124 "GET /cart/ HTTP/1.1" 404 6830
+WARNING 2018-08-27 16:13:36,444 base 152 Not Found: /categories/115/skus/
+INFO 2018-08-27 16:13:36,469 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2018-08-27 16:13:36,464 base 152 Not Found: /categories/115/
+WARNING 2018-08-27 16:13:36,475 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 404 6924
+WARNING 2018-08-27 16:13:36,481 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 6860
+WARNING 2018-08-27 16:13:36,556 base 152 Not Found: /cart/
+WARNING 2018-08-27 16:13:36,561 basehttp 124 "GET /cart/ HTTP/1.1" 404 6830
+INFO 2018-08-27 16:14:03,302 basehttp 124 "GET /admin HTTP/1.1" 301 0
+INFO 2018-08-27 16:14:03,572 basehttp 124 "GET /admin/ HTTP/1.1" 200 7507
+WARNING 2018-08-27 16:14:04,191 base 152 Not Found: /favicon.ico
+WARNING 2018-08-27 16:14:04,203 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 6842
+INFO 2018-08-27 16:14:11,507 basehttp 124 "GET /admin/goods/skuimage/ HTTP/1.1" 200 15618
+INFO 2018-08-27 16:14:11,652 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-08-27 16:14:15,611 basehttp 124 "GET /admin/goods/skuimage/add/ HTTP/1.1" 200 6595
+INFO 2018-08-27 16:14:15,717 basehttp 124 "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2018-08-27 16:14:15,717 basehttp 124 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2018-08-27 16:14:15,719 basehttp 124 "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2018-08-27 16:14:15,745 basehttp 124 "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2018-08-27 16:14:15,762 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+ERROR 2018-08-27 16:14:30,517 exception 135 Internal Server Error: /admin/goods/skuimage/add/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1508, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/db/models/base.py", line 808, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/db/models/base.py", line 838, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/db/models/base.py", line 924, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/db/models/base.py", line 963, in _do_insert
+    using=using, raw=raw)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/db/models/query.py", line 1076, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1111, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1064, in as_sql
+    for obj in self.query.objs
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1064, in <listcomp>
+    for obj in self.query.objs
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1063, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1013, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/db/models/fields/files.py", line 296, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/db/models/fields/files.py", line 93, in save
+    name = self.field.generate_filename(self.instance, name)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/db/models/fields/files.py", line 331, in generate_filename
+    return self.storage.generate_filename(filename)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/utils/functional.py", line 238, in inner
+    self._setup()
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/files/storage.py", line 472, in _setup
+    self._wrapped = get_storage_class()()
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/files/storage.py", line 467, in get_storage_class
+    return import_string(import_path or settings.DEFAULT_FILE_STORAGE)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/utils/module_loading.py", line 20, in import_string
+    module = import_module(module_path)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+ImportError: No module named 'meiduo_mall'
+ERROR 2018-08-27 16:14:30,772 basehttp 124 "POST /admin/goods/skuimage/add/ HTTP/1.1" 500 216213
+INFO 2018-08-27 16:16:47,343 basehttp 124 "POST /admin/goods/skuimage/add/ HTTP/1.1" 302 0
+INFO 2018-08-27 16:16:48,216 basehttp 124 "GET /admin/goods/skuimage/ HTTP/1.1" 200 16169
+INFO 2018-08-27 16:16:48,308 basehttp 124 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2018-08-27 16:16:48,326 basehttp 124 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2018-08-27 16:16:48,326 basehttp 124 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2018-08-27 16:16:48,332 basehttp 124 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2018-08-27 16:16:48,342 basehttp 124 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2018-08-27 16:16:48,356 basehttp 124 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2018-08-27 16:16:48,367 basehttp 124 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2018-08-27 16:16:48,369 basehttp 124 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2018-08-27 16:16:48,380 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-08-27 16:16:48,383 basehttp 124 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2018-08-27 16:16:48,394 basehttp 124 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2018-08-27 16:16:48,446 basehttp 124 "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO 2018-08-27 16:16:48,783 basehttp 124 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+INFO 2018-08-27 16:16:48,791 basehttp 124 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO 2018-08-27 16:16:48,813 basehttp 124 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO 2018-08-27 16:16:48,842 basehttp 124 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2018-08-27 16:16:48,847 basehttp 124 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+WARNING 2018-08-27 16:16:59,777 base 152 Not Found: /categories/115/skus/
+WARNING 2018-08-27 16:16:59,799 base 152 Not Found: /categories/115/
+WARNING 2018-08-27 16:16:59,813 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 404 6924
+WARNING 2018-08-27 16:16:59,815 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 6860
+WARNING 2018-08-27 16:16:59,832 base 152 Not Found: /cart/
+WARNING 2018-08-27 16:16:59,852 basehttp 124 "GET /cart/ HTTP/1.1" 404 6830
+WARNING 2018-08-27 16:20:33,263 base 152 Not Found: /categories/115/
+WARNING 2018-08-27 16:20:33,279 base 152 Not Found: /cart/
+WARNING 2018-08-27 16:20:33,307 basehttp 124 "GET /cart/ HTTP/1.1" 404 7023
+WARNING 2018-08-27 16:20:33,319 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 7053
+INFO 2018-08-27 16:20:33,381 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+INFO 2018-08-27 19:08:23,566 basehttp 124 "GET /skus/search/?text=%E8%8B%B9%E6%9E%9C&page=1&page_size=6 HTTP/1.1" 200 52
+INFO 2018-08-27 19:09:07,409 basehttp 124 "GET /skus/search/?text=%E5%8D%8E%E4%B8%BA&page=1&page_size=6 HTTP/1.1" 200 52
+INFO 2018-08-27 19:10:01,151 basehttp 124 "GET /skus/search/?text=%E5%8D%8E%E4%B8%BA&page=1&page_size=6 HTTP/1.1" 200 52
+INFO 2018-08-27 19:10:43,833 basehttp 124 "GET /skus/search/?text=%E5%8D%8E%E4%B8%BA&page=1&page_size=6 HTTP/1.1" 200 52
+INFO 2018-08-27 19:17:27,905 basehttp 124 "GET /skus/search/?text=%E5%8D%8E%E4%B8%BA&page=1&page_size=6 HTTP/1.1" 200 2704
+INFO 2018-08-27 19:46:09,972 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2018-08-27 19:46:10,058 base 152 Not Found: /cart/
+WARNING 2018-08-27 19:46:10,082 basehttp 124 "GET /cart/ HTTP/1.1" 404 8242
+WARNING 2018-08-27 19:46:10,054 base 152 Not Found: /categories/115/
+WARNING 2018-08-27 19:46:10,083 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8272
+INFO 2018-08-27 19:46:10,295 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+WARNING 2018-08-27 21:06:13,609 base 152 Not Found: /index.html
+WARNING 2018-08-27 21:06:13,628 basehttp 124 "GET /index.html HTTP/1.1" 404 8251
+WARNING 2018-08-27 21:06:13,820 base 152 Not Found: /favicon.ico
+WARNING 2018-08-27 21:06:13,837 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 8254
+INFO 2018-08-28 16:02:03,260 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+WARNING 2018-08-28 16:02:03,406 basehttp 124 "POST /authorizations/ HTTP/1.1" 400 67
+INFO 2018-08-28 16:02:53,890 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 226
+INFO 2018-08-28 16:03:00,987 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-08-28 16:03:01,141 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+INFO 2018-08-28 16:03:01,164 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-08-28 16:03:23,904 basehttp 124 "GET /skus/search/?text=%E8%8B%B9%E6%9E%9C&page=1&page_size=6 HTTP/1.1" 200 52
+INFO 2018-08-28 16:03:33,393 basehttp 124 "GET /skus/search/?text=%E5%8D%8E%E4%B8%BA&page=1&page_size=6 HTTP/1.1" 200 2704
+INFO 2018-08-28 16:03:38,417 basehttp 124 "OPTIONS /user/browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-08-28 16:03:38,688 base 152 Not Found: /user/browse_histories/
+WARNING 2018-08-28 16:03:38,695 basehttp 124 "POST /user/browse_histories/ HTTP/1.1" 404 8461
+WARNING 2018-08-28 16:03:41,032 base 152 Not Found: /user/browse_histories/
+WARNING 2018-08-28 16:03:41,037 basehttp 124 "POST /user/browse_histories/ HTTP/1.1" 404 8461
+WARNING 2018-08-28 16:03:59,322 base 152 Not Found: /user/browse_histories/
+WARNING 2018-08-28 16:03:59,327 basehttp 124 "POST /user/browse_histories/ HTTP/1.1" 404 8461
+WARNING 2018-08-28 16:04:08,543 base 152 Not Found: /user/browse_histories/
+WARNING 2018-08-28 16:04:08,549 basehttp 124 "POST /user/browse_histories/ HTTP/1.1" 404 8461
+INFO 2018-08-28 16:04:11,132 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+INFO 2018-08-28 16:04:14,881 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+ERROR 2018-08-28 16:05:31,384 exceptions 25 [<users.views.UserBrowsingHistoryView object at 0x7f9d60516da0>] Error 111 connecting to 10.211.55.5:6379. Connection refused.
+ERROR 2018-08-28 16:05:31,385 basehttp 124 "GET /browse_histories/ HTTP/1.1" 507 35
+ERROR 2018-08-28 16:06:41,290 exceptions 25 [<users.views.UserBrowsingHistoryView object at 0x7f9d602716a0>] Error 111 connecting to 10.211.55.5:6379. Connection refused.
+ERROR 2018-08-28 16:06:41,292 basehttp 124 "GET /browse_histories/ HTTP/1.1" 507 35
+ERROR 2018-08-28 16:06:45,037 exceptions 25 [<users.views.UserBrowsingHistoryView object at 0x7f9d6027e3c8>] Error 111 connecting to 10.211.55.5:6379. Connection refused.
+ERROR 2018-08-28 16:06:45,044 basehttp 124 "GET /browse_histories/ HTTP/1.1" 507 35
+INFO 2018-08-28 16:07:07,205 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+WARNING 2018-08-28 16:07:07,239 base 152 Not Found: /browse_histories/
+WARNING 2018-08-28 16:07:07,244 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 8450
+INFO 2018-08-28 16:07:23,547 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+INFO 2018-08-28 16:07:41,510 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+INFO 2018-08-28 16:08:07,988 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-08-28 16:08:08,247 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+INFO 2018-08-28 16:08:08,389 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-08-28 16:09:22,491 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+ERROR 2018-08-28 16:09:53,737 exceptions 25 [<users.views.UserBrowsingHistoryView object at 0x7fd85c580da0>] Error 111 connecting to 10.211.55.5:6379. Connection refused.
+ERROR 2018-08-28 16:09:53,739 basehttp 124 "GET /browse_histories/ HTTP/1.1" 507 35
+ERROR 2018-08-28 16:10:11,694 exceptions 25 [<users.views.UserBrowsingHistoryView object at 0x7fd85c598a58>] Error 111 connecting to 10.211.55.5:6379. Connection refused.
+ERROR 2018-08-28 16:10:11,696 basehttp 124 "GET /browse_histories/ HTTP/1.1" 507 35
+ERROR 2018-08-28 16:10:38,548 exceptions 25 [<users.views.UserBrowsingHistoryView object at 0x7fd85c321cc0>] Error 111 connecting to 10.211.55.5:6379. Connection refused.
+ERROR 2018-08-28 16:10:38,550 basehttp 124 "GET /browse_histories/ HTTP/1.1" 507 35
+ERROR 2018-08-28 16:11:52,624 exceptions 25 [<users.views.UserBrowsingHistoryView object at 0x7fd85c3505f8>] Error 111 connecting to 10.211.55.5:6379. Connection refused.
+ERROR 2018-08-28 16:11:52,626 basehttp 124 "GET /browse_histories/ HTTP/1.1" 507 35
+INFO 2018-08-28 16:12:50,516 basehttp 124 "GET /skus/search/?text=apple&page=1&page_size=6 HTTP/1.1" 200 2531
+WARNING 2018-08-28 16:12:53,899 base 152 Not Found: /user/browse_histories/
+WARNING 2018-08-28 16:12:53,905 basehttp 124 "POST /user/browse_histories/ HTTP/1.1" 404 8461
+INFO 2018-08-28 16:13:47,070 basehttp 124 "OPTIONS /user/browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-08-28 16:13:47,167 base 152 Not Found: /user/browse_histories/
+WARNING 2018-08-28 16:13:47,183 basehttp 124 "POST /user/browse_histories/ HTTP/1.1" 404 8461
+WARNING 2018-08-28 16:13:55,765 base 152 Not Found: /user/browse_histories/
+WARNING 2018-08-28 16:13:55,769 basehttp 124 "POST /user/browse_histories/ HTTP/1.1" 404 8461
+INFO 2018-08-28 16:13:57,960 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+INFO 2018-08-28 16:13:58,042 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 2
+INFO 2018-08-28 16:14:59,853 basehttp 124 "GET /skus/search/?text=apple&page=1&page_size=6 HTTP/1.1" 200 2531
+WARNING 2018-08-28 16:15:03,691 base 152 Not Found: /user/browse_histories/
+WARNING 2018-08-28 16:15:03,699 basehttp 124 "POST /user/browse_histories/ HTTP/1.1" 404 8461
+INFO 2018-08-28 16:16:28,034 basehttp 124 "GET /browse_histories HTTP/1.1" 301 0
+WARNING 2018-08-28 16:16:28,296 basehttp 124 "GET /browse_histories/ HTTP/1.1" 401 5178
+INFO 2018-08-28 16:16:28,362 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2018-08-28 16:16:28,362 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2018-08-28 16:16:28,363 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2018-08-28 16:16:28,365 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2018-08-28 16:16:28,380 basehttp 124 "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 304 0
+INFO 2018-08-28 16:16:28,384 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2018-08-28 16:16:28,405 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2018-08-28 16:16:28,419 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2018-08-28 16:16:28,422 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2018-08-28 16:16:28,424 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2018-08-28 16:16:28,685 basehttp 124 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+WARNING 2018-08-28 16:16:29,133 base 152 Not Found: /favicon.ico
+WARNING 2018-08-28 16:16:29,139 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 8427
+WARNING 2018-08-28 16:16:39,307 basehttp 124 "GET /browse_histories/?format=api HTTP/1.1" 401 5222
+INFO 2018-08-28 16:16:50,674 basehttp 124 "GET /admin HTTP/1.1" 301 0
+INFO 2018-08-28 16:16:50,731 basehttp 124 "GET /admin/ HTTP/1.1" 302 0
+INFO 2018-08-28 16:16:50,897 basehttp 124 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1652
+INFO 2018-08-28 16:16:50,920 basehttp 124 "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+INFO 2018-08-28 16:16:50,922 basehttp 124 "GET /static/admin/css/base.css HTTP/1.1" 200 16066
+INFO 2018-08-28 16:16:51,048 basehttp 124 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2018-08-28 16:16:51,138 basehttp 124 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+INFO 2018-08-28 16:16:51,185 basehttp 124 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+INFO 2018-08-28 16:17:00,714 basehttp 124 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2018-08-28 16:17:01,602 basehttp 124 "GET /admin/ HTTP/1.1" 200 7910
+INFO 2018-08-28 16:17:01,653 basehttp 124 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+INFO 2018-08-28 16:17:01,712 basehttp 124 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+INFO 2018-08-28 16:17:01,724 basehttp 124 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2018-08-28 16:17:01,731 basehttp 124 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2018-08-28 16:17:16,480 basehttp 124 "GET /browse_histories HTTP/1.1" 301 0
+ERROR 2018-08-28 16:17:16,547 exception 135 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/renderers.py", line 701, in get_context
+    'filter_form': self.get_filter_form(data, view, request),
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/renderers.py", line 631, in get_filter_form
+    queryset = view.get_queryset()
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/generics.py", line 68, in get_queryset
+    % self.__class__.__name__
+AssertionError: 'UserBrowsingHistoryView' should either include a `queryset` attribute, or override the `get_queryset()` method.
+ERROR 2018-08-28 16:17:16,659 basehttp 124 "GET /browse_histories/ HTTP/1.1" 500 103960
+INFO 2018-08-28 16:18:25,190 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 8558
+WARNING 2018-08-28 16:18:32,427 basehttp 124 "POST /browse_histories/ HTTP/1.1" 403 5059
+INFO 2018-08-28 16:19:14,768 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 8558
+INFO 2018-08-28 16:19:18,682 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 8592
+INFO 2018-08-28 16:19:33,549 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-08-28 16:19:33,674 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+INFO 2018-08-28 16:19:33,729 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-08-28 16:19:33,819 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 2
+INFO 2018-08-28 16:22:20,527 basehttp 124 "GET /skus/search/?text=apple&page=1&page_size=6 HTTP/1.1" 200 2531
+INFO 2018-08-28 16:22:23,393 basehttp 124 "OPTIONS /user/browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-08-28 16:22:23,597 base 152 Not Found: /user/browse_histories/
+WARNING 2018-08-28 16:22:23,603 basehttp 124 "POST /user/browse_histories/ HTTP/1.1" 404 8461
+INFO 2018-08-28 16:22:28,638 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-08-28 16:22:28,981 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+INFO 2018-08-28 16:22:29,004 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-08-28 16:22:29,065 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 2
+INFO 2018-08-28 16:26:15,427 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-08-28 16:26:15,646 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+INFO 2018-08-28 16:26:15,721 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-08-28 16:26:15,803 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 2
+INFO 2018-08-28 16:27:26,487 basehttp 124 "GET /skus/search/?text=apple&page=1&page_size=6 HTTP/1.1" 200 2531
+WARNING 2018-08-28 16:27:49,865 base 152 Not Found: /user/browse_histories/
+WARNING 2018-08-28 16:27:49,870 basehttp 124 "POST /user/browse_histories/ HTTP/1.1" 404 8461
+INFO 2018-08-28 16:28:49,470 basehttp 124 "OPTIONS /user/browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-08-28 16:28:49,802 base 152 Not Found: /user/browse_histories/
+WARNING 2018-08-28 16:28:49,811 basehttp 124 "POST /user/browse_histories/ HTTP/1.1" 404 8461
+INFO 2018-08-28 16:29:46,413 basehttp 124 "OPTIONS /user/browse_histories/ HTTP/1.1" 200 0
+INFO 2018-08-28 16:29:46,559 basehttp 124 "POST /user/browse_histories/ HTTP/1.1" 201 12
+INFO 2018-08-28 16:30:10,179 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-08-28 16:30:10,485 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+INFO 2018-08-28 16:30:10,560 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-08-28 16:30:10,637 base 152 Not Found: /browse_histories/
+WARNING 2018-08-28 16:30:10,650 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 8450
+INFO 2018-08-28 16:30:54,746 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+INFO 2018-08-28 16:30:54,806 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 200
+INFO 2018-08-28 17:32:11,543 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-08-28 17:32:11,595 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+INFO 2018-08-28 17:32:11,616 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-08-28 17:32:11,651 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 200
+INFO 2018-08-28 17:32:23,284 basehttp 124 "GET /skus/search/?text=apple&page=1&page_size=6 HTTP/1.1" 200 2531
+INFO 2018-08-28 17:32:25,584 basehttp 124 "OPTIONS /user/browse_histories/ HTTP/1.1" 200 0
+INFO 2018-08-28 17:32:25,717 basehttp 124 "POST /user/browse_histories/ HTTP/1.1" 201 12
+INFO 2018-08-28 17:32:28,261 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+INFO 2018-08-28 17:32:28,362 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 420
+INFO 2018-08-28 17:33:01,857 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+INFO 2018-08-28 17:33:01,965 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 420
+INFO 2018-08-28 17:33:06,662 basehttp 124 "POST /user/browse_histories/ HTTP/1.1" 201 12
+INFO 2018-08-28 17:33:10,561 basehttp 124 "POST /user/browse_histories/ HTTP/1.1" 201 13
+INFO 2018-08-28 17:33:12,802 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+INFO 2018-08-28 17:33:12,939 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 657
+INFO 2018-08-30 15:46:38,560 basehttp 124 "GET /skus/search/?text=%E5%8D%8E%E4%B8%BA&page=1&page_size=6 HTTP/1.1" 200 52
+INFO 2018-08-30 15:47:30,475 basehttp 124 "GET /skus/search/?text=%E5%8D%8E%E4%B8%BA&page=1&page_size=6 HTTP/1.1" 200 52
+INFO 2018-08-30 15:48:58,472 basehttp 124 "GET /skus/search/?text=apple&page=1&page_size=6 HTTP/1.1" 200 52
+INFO 2018-08-30 15:55:27,962 basehttp 124 "GET /skus/search/?text=apple&page=1&page_size=6 HTTP/1.1" 200 52
+INFO 2018-08-30 15:55:43,076 basehttp 124 "GET /skus/search/?text=apple&page=1&page_size=6 HTTP/1.1" 200 52
+INFO 2018-08-30 15:57:04,520 basehttp 124 "GET /skus/search/?text=apple&page=1&page_size=6 HTTP/1.1" 200 52
+INFO 2018-08-30 16:05:04,122 basehttp 124 "GET /skus/search/?text=apple&page=1&page_size=6 HTTP/1.1" 200 52
+INFO 2018-08-30 16:06:47,572 basehttp 124 "GET /skus/search/?text=apple&page=1&page_size=6 HTTP/1.1" 200 2531
+INFO 2018-08-30 16:07:08,802 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2018-08-30 16:07:08,831 base 152 Not Found: /cart/
+WARNING 2018-08-30 16:07:08,840 basehttp 124 "POST /cart/ HTTP/1.1" 404 8582
+INFO 2018-08-30 16:07:34,561 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2018-08-30 16:07:34,601 base 152 Not Found: /cart/
+WARNING 2018-08-30 16:07:34,611 basehttp 124 "POST /cart/ HTTP/1.1" 404 8582
+INFO 2018-08-30 16:08:50,944 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-08-30 16:08:51,070 basehttp 124 "POST /cart/ HTTP/1.1" 200 38
+ERROR 2018-08-30 16:08:58,992 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/apps/carts/views.py", line 66, in get
+    cart_dict = turnover.loads(cart)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/utils/turnover.py", line 12, in loads
+    cart_bytes = base64.b64decode(cart_64)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/base64.py", line 88, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR 2018-08-30 16:08:59,225 basehttp 124 "GET /cart/ HTTP/1.1" 500 20089
+INFO 2018-08-30 16:09:13,308 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-08-30 16:09:13,370 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/apps/carts/views.py", line 66, in get
+    cart_dict = turnover.loads(cart)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/utils/turnover.py", line 12, in loads
+    cart_bytes = base64.b64decode(cart_64)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/base64.py", line 88, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR 2018-08-30 16:09:13,484 basehttp 124 "GET /cart/ HTTP/1.1" 500 20146
+INFO 2018-08-30 16:15:20,616 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-08-30 16:15:20,637 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/apps/carts/views.py", line 66, in get
+    cart_dict = turnover.loads(cart)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/utils/turnover.py", line 14, in loads
+    cart_bytes = base64.b64decode(cart_64)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/base64.py", line 88, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR 2018-08-30 16:15:21,344 basehttp 124 "GET /cart/ HTTP/1.1" 500 20146
+INFO 2018-08-30 16:18:52,427 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-08-30 16:18:52,444 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/apps/carts/views.py", line 67, in get
+    cart_dict = turnover.loads(cart)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/utils/turnover.py", line 14, in loads
+    cart_bytes = base64.b64decode(cart_64)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/base64.py", line 88, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR 2018-08-30 16:18:52,858 basehttp 124 "GET /cart/ HTTP/1.1" 500 20146
+INFO 2018-08-30 16:22:36,678 basehttp 124 "GET /skus/search/?text=apple&page=1&page_size=6 HTTP/1.1" 200 2531
+INFO 2018-08-30 16:22:47,096 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-08-30 16:22:47,129 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/apps/carts/views.py", line 36, in post
+    cart_dict = turnover.loads(cart)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/utils/turnover.py", line 14, in loads
+    cart_bytes = base64.b64decode(cart_64)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/base64.py", line 88, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR 2018-08-30 16:22:47,202 basehttp 124 "POST /cart/ HTTP/1.1" 500 20168
+ERROR 2018-08-30 16:23:28,630 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/apps/carts/views.py", line 36, in post
+    cart_dict = turnover.loads(cart)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/utils/turnover.py", line 14, in loads
+    cart_bytes = base64.b64decode(cart_64)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/base64.py", line 88, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR 2018-08-30 16:23:28,679 basehttp 124 "POST /cart/ HTTP/1.1" 500 20111
+INFO 2018-08-30 16:24:30,425 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-08-30 16:24:30,472 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/apps/carts/views.py", line 36, in post
+    cart_dict = turnover.loads(cart)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/utils/turnover.py", line 14, in loads
+    cart_bytes = base64.b64decode(cart_64)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/base64.py", line 88, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR 2018-08-30 16:24:30,498 basehttp 124 "POST /cart/ HTTP/1.1" 500 20168
+ERROR 2018-08-30 16:29:25,416 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/apps/carts/views.py", line 36, in post
+    cart_dict = turnover.loads(cart)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/utils/turnover.py", line 14, in loads
+    cart_bytes = base64.b64decode(cart_64)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/base64.py", line 88, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR 2018-08-30 16:29:25,438 basehttp 124 "POST /cart/ HTTP/1.1" 500 20111
+INFO 2018-08-30 16:33:50,461 basehttp 124 "GET /skus/search/?text=apple&page=1&page_size=6 HTTP/1.1" 200 2531
+INFO 2018-08-30 16:33:55,384 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-08-30 16:33:55,406 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/apps/carts/views.py", line 34, in post
+    cart_dict = turnover.loads(cart)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/utils/turnover.py", line 18, in loads
+    cart_bytes = base64.b64decode(cart_64)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/base64.py", line 88, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR 2018-08-30 16:33:55,453 basehttp 124 "POST /cart/ HTTP/1.1" 500 20111
+ERROR 2018-08-30 16:35:47,839 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/apps/carts/views.py", line 36, in post
+    cart_dict = turnover.loads(cart)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/utils/turnover.py", line 18, in loads
+    cart_bytes = base64.b64decode(cart_64)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/base64.py", line 88, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR 2018-08-30 16:35:47,869 basehttp 124 "POST /cart/ HTTP/1.1" 500 20111
+INFO 2018-08-30 16:38:53,109 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-08-30 16:38:53,132 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/apps/carts/views.py", line 36, in post
+    cart_dict = turnover.loads(cart)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/utils/turnover.py", line 18, in loads
+    cart_bytes = base64.b64decode(cart_64)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/base64.py", line 88, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR 2018-08-30 16:38:53,172 basehttp 124 "POST /cart/ HTTP/1.1" 500 20168
+INFO 2018-08-30 16:39:15,036 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-08-30 16:39:15,059 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/apps/carts/views.py", line 36, in post
+    cart_dict = turnover.loads(cart)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/utils/turnover.py", line 18, in loads
+    cart_bytes = base64.b64decode(cart_64)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/base64.py", line 88, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR 2018-08-30 16:39:15,082 basehttp 124 "POST /cart/ HTTP/1.1" 500 20168
+INFO 2018-08-30 16:39:58,094 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-08-30 16:39:58,113 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/apps/carts/views.py", line 37, in post
+    cart_dict = turnover.loads(cart)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/utils/turnover.py", line 18, in loads
+    cart_bytes = base64.b64decode(cart_64)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/base64.py", line 88, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR 2018-08-30 16:39:58,171 basehttp 124 "POST /cart/ HTTP/1.1" 500 20168
+INFO 2018-08-30 16:41:19,411 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-08-30 16:41:19,458 basehttp 124 "POST /cart/ HTTP/1.1" 200 38
+INFO 2018-08-30 16:41:36,346 basehttp 124 "GET /cart/ HTTP/1.1" 200 213
+INFO 2018-08-30 16:43:38,655 basehttp 124 "GET /skus/search/?text=apple&page=1&page_size=6 HTTP/1.1" 200 2531
+INFO 2018-08-30 16:43:50,765 basehttp 124 "POST /cart/ HTTP/1.1" 200 38
+INFO 2018-08-30 16:43:56,013 basehttp 124 "GET /cart/ HTTP/1.1" 200 447
+INFO 2018-08-30 17:05:51,026 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-08-30 17:05:51,086 basehttp 124 "GET /cart/ HTTP/1.1" 200 447
+ERROR 2018-08-30 17:05:53,398 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/apps/carts/views.py", line 85, in put
+    serializer.is_valid(raise_exception=True)
+TypeError: is_valid() missing 1 required positional argument: 'self'
+ERROR 2018-08-30 17:05:53,440 basehttp 124 "PUT /cart/ HTTP/1.1" 500 19820
+ERROR 2018-08-30 17:05:54,677 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/apps/carts/views.py", line 85, in put
+    serializer.is_valid(raise_exception=True)
+TypeError: is_valid() missing 1 required positional argument: 'self'
+ERROR 2018-08-30 17:05:54,709 basehttp 124 "PUT /cart/ HTTP/1.1" 500 19820
+ERROR 2018-08-30 17:05:57,754 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/MeiDuoMall/meiduo/apps/carts/views.py", line 85, in put
+    serializer.is_valid(raise_exception=True)
+TypeError: is_valid() missing 1 required positional argument: 'self'
+ERROR 2018-08-30 17:05:57,797 basehttp 124 "PUT /cart/ HTTP/1.1" 500 19820
+INFO 2018-08-30 17:06:01,551 basehttp 124 "GET /cart/ HTTP/1.1" 200 447
+ERROR 2018-08-30 17:08:03,610 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 485, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 400, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2018-08-30 17:08:03,671 basehttp 124 "PUT /cart/ HTTP/1.1" 500 91451
+INFO 2018-08-30 17:08:05,563 basehttp 124 "GET /cart/ HTTP/1.1" 200 447
+INFO 2018-08-30 17:09:26,122 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-08-30 17:09:27,430 basehttp 124 "GET /cart/ HTTP/1.1" 200 448
+INFO 2018-08-30 17:09:30,228 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-08-30 17:09:33,299 basehttp 124 "GET /cart/ HTTP/1.1" 200 448
+INFO 2018-08-30 17:09:37,519 basehttp 124 "PUT /cart/ HTTP/1.1" 200 38
+INFO 2018-08-30 17:09:38,937 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-08-30 17:37:55,604 basehttp 124 "DELETE /cart/ HTTP/1.1" 204 0
+INFO 2018-08-30 17:37:58,038 basehttp 124 "GET /cart/ HTTP/1.1" 200 214
+WARNING 2018-08-30 17:38:08,693 base 152 Not Found: /categories/115/
+WARNING 2018-08-30 17:38:08,735 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8766
+INFO 2018-08-30 17:38:08,736 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+INFO 2018-08-30 17:38:08,752 basehttp 124 "GET /cart/ HTTP/1.1" 200 214
+INFO 2018-08-30 17:38:33,774 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=price HTTP/1.1" 200 1312
+INFO 2018-08-30 17:38:35,004 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=sales HTTP/1.1" 200 1270
+INFO 2018-08-30 17:38:36,048 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+INFO 2018-08-30 17:48:38,189 basehttp 124 "GET /cart/ HTTP/1.1" 200 214
+INFO 2018-08-30 17:48:39,445 basehttp 124 "GET /cart/ HTTP/1.1" 200 214
+INFO 2018-08-30 17:48:47,901 basehttp 124 "GET /skus/search/?text=apple&page=1&page_size=6 HTTP/1.1" 200 2531
+INFO 2018-08-30 17:48:57,803 basehttp 124 "POST /cart/ HTTP/1.1" 200 38
+INFO 2018-08-30 17:49:01,459 basehttp 124 "GET /cart/ HTTP/1.1" 200 454
+INFO 2018-08-30 17:49:03,964 basehttp 124 "OPTIONS /cart/selection/ HTTP/1.1" 200 0
+WARNING 2018-08-30 17:49:03,984 base 152 Not Found: /cart/selection/
+WARNING 2018-08-30 17:49:03,990 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 404 8766
+WARNING 2018-08-30 17:49:05,909 base 152 Not Found: /cart/selection/
+WARNING 2018-08-30 17:49:05,913 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 404 8766
+WARNING 2018-08-30 17:49:07,310 base 152 Not Found: /cart/selection/
+WARNING 2018-08-30 17:49:07,315 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 404 8766
+INFO 2018-08-30 17:49:10,427 basehttp 124 "GET /cart/ HTTP/1.1" 200 454
+INFO 2018-08-30 17:50:28,142 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 200 16
+INFO 2018-08-30 17:50:30,921 basehttp 124 "GET /cart/ HTTP/1.1" 200 453
+INFO 2018-08-30 18:08:21,752 basehttp 124 "GET /skus/search/?text=apple&page=1&page_size=6 HTTP/1.1" 200 2531
+INFO 2018-08-30 18:08:31,203 basehttp 124 "POST /cart/ HTTP/1.1" 200 38
+INFO 2018-08-30 18:08:38,133 basehttp 124 "GET /cart/ HTTP/1.1" 200 687

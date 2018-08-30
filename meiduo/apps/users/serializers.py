@@ -4,6 +4,8 @@ from .models import User,Address
 from django_redis import get_redis_connection
 import re
 from celery_tasks.email.tasks import send_verify_email
+from . import constants
+from goods.models import SKU
 
 
 
@@ -188,3 +190,38 @@ class AddressTitleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Address
         fields = ('title',)
+
+
+class AddUserBrowsingHistorySerializer(serializers.Serializer):
+    sku_id = serializers.IntegerField(label='商品SKU编号',min_value=1)
+
+    def validate_sku_id(self, value):
+        # 验证商品编号是否存在
+        try:
+            SKU.objects.get(id = value)
+        except:
+            raise serializers.ValidationError('商品编号不存在')
+
+        return value
+
+    def create(self, validated_data):
+        user_id = self.context['request'].user.id
+        sku_id = validated_data['sku_id']
+
+        # 链接redis
+        redis_con = get_redis_connection('history')
+        key = 'history_%s'%user_id
+
+        # 管道
+        pl = redis_con.pipeline()
+
+        # 删除已存在相同的浏览记录
+        pl.lrem(key,0,sku_id)
+        # 添加新的浏览记录
+        pl.lpush(key,sku_id)
+        # 截取5个记录
+        pl.ltrim(key,0,4)
+
+        pl.execute()
+
+        return validated_data
