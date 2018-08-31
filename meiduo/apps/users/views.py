@@ -16,6 +16,8 @@ from . import constants
 from django_redis import get_redis_connection
 from goods.models import SKU
 from goods.serializers import SKUSerializer
+from rest_framework_jwt.views import ObtainJSONWebToken
+from carts.utils import merge_cart_cookie_to_redis
 
 class UsernameCountView(APIView):
 
@@ -169,3 +171,21 @@ class UserBrowsingHistoryView(CreateAPIView):
             skus.append(SKU.objects.get(id=sku_id))
         sku_serializer = SKUSerializer(skus,many=True)
         return Response(sku_serializer.data)
+
+
+class UserJWTView(ObtainJSONWebToken):
+    # 重写JWT登录认证
+    def post(self, request, *args, **kwargs):
+        # 调用父类post方法
+        response = super().post(request, *args, **kwargs)
+
+        # 判断是否登录成功
+        if 'user_id' not in response.data:
+            return response
+
+        # 合并购物车
+        user_id = response.data.get('user_id')
+        response = merge_cart_cookie_to_redis(request,response,user_id)
+
+        return response
+

@@ -8,6 +8,8 @@ from .exceptions import QQAPIError
 from .utils import OAuthQQ
 from .serializers import OAuthQQUserSerializer
 
+from carts.utils import merge_cart_cookie_to_redis
+
 
 class QQAuthURLView(APIView):
     """
@@ -70,6 +72,10 @@ class QQAuthUserView(APIView):
                 'user_id': user.id,
                 'username': user.username
             })
+
+            # 登录成功，合并购物车
+            response = merge_cart_cookie_to_redis(request,response,user.id)
+
             return response
 
     def post(self, request):
@@ -82,4 +88,8 @@ class QQAuthUserView(APIView):
             'user_id': user.id,
             'username': user.username
         })
+
+        # 登录成功，合并购物车
+        response = merge_cart_cookie_to_redis(request, response, user.id)
+
         return response

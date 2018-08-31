@@ -17,7 +17,7 @@ var vm = new Vue({
     },
     mounted: function(){
         // 获取地址信息
-        axios.get(this.host + '/user/addresses/', {
+        axios.get(this.host + '/addresses/', {
                 headers: {
                     'Authorization': 'JWT ' + this.token
                 },
